@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/loginColor"
+    android:gravity="center"
+    tools:context=".LoginActivity"
+    android:padding="10dp" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/etLgUname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/input_login"
+            android:hint="Enter username" />
+
+        <EditText
+            android:id="@+id/etLgPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:hint="Enter password" />
+
+        <ImageButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@color/btn_login_bg"
+            android:text="Login"
+            app:srcCompat="@drawable/ic_arrow_upward_black_24dp"
+            android:textSize="15sp"/>
+            <!--app:srcCompat="@drawable/ic_arrow_upward_black_24dp" />-->
+
+    </LinearLayout>
+
+</LinearLayout>
